@@ -19,6 +19,7 @@ struct io{//estructura
 	float x, y, z;
 	int carga;
 }ion [MAXPART];
+
 int n, np=100, nn=100;
 int p, pasos=10000000, actu=100000;
 float temp=300;
@@ -35,10 +36,11 @@ main(){
 srand((unsigned)time(NULL));/*sembrando la semilla*/
 
 system ("mkdir temp");
-
-//for(p=1; p<=pasos; p++){/*INICIO(Principal)*/
+	
 	asigna_posiciones();
-	//if(p%1==0)printf("\rPasos: %i", p);
+	
+//for(p=1; p<=pasos; p++){/*INICIO(Principal)*/
+//if(p%1==0)printf("\rPasos: %i", p);
 	//if(p%actu==0){
 	imprime_gdr();
 	salida3d();
